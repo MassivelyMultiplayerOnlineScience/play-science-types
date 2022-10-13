@@ -1,0 +1,6 @@
+{
+  "name": "play-science-types",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Play Science domain model and API request interface definition"
+}
