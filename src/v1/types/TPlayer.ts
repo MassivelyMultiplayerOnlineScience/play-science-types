@@ -1,43 +1,76 @@
 
-import { TPlayerProject } from "./TPlayerProject";
-import { TAchievementUnlock } from "./TAchievementUnlock";
-import { TRewardTransaction } from "./TRewardTransaction";
-import { OAuthProviderCode } from "./TPlayerOAuth";
-import { TPlayerGame } from "./TPlayerGame";
-import { TPlayerActivity } from "./TPlayerActivity";
+import { TPlayerTransaction } from "./TPlayerTransaction";
+import { OAuthProviderCode, TPlayerOAuth } from "./TPlayerOAuth";
 
 export type TPlayer = {
-	id: number;  // Primary key in the mmmos-proxy-api
-	code: string; // Player code for the mmos-api
+	id: number; // Unique player ID on the Play Science platform
+	code: string; // Unique player code for used to communnicate with the MMOS API
 
-	oAuthProviderCode?: OAuthProviderCode;
-	oAuthName?: string;
-	oAuthImageURL?: string;
-	oAuthEmail?: string;
+	nick: string;
+	dob?: Date;
+	gender?: string;
+	countryCode?: string;
+	languageCode?: string;
+	avatarURL?: string;
+	lastNotificationId: number;
 
-	profileNick?: string;
-	profileDoB?: Date;
-	profileGender?: string;
-	profileNationality?: string;
-	profileImageURL?: string;
+	// Tokens
+	tokens: number;
+	transactions?: TPlayerTransaction[];
 
-	games?: TPlayerGame[];
-	projects?: TPlayerProject[];
 
-	referralID?: string; // deferred deep linking
-	referralContext?: any;
-	referralPlayerID: string;
+	minigames: {
+		id: number;
 
-	banned: boolean;
-	suspened: boolean;
-	suspensionTill: Date;
+		started: Date;
+		lastPlayed: Date;
 
-	activities?: TPlayerActivity[];
+		classificationCount: number;
+		classificationCountLastWeek: number;
+		classificationCountLastMonth: number;
+		accuracyScore: number;
+	}[];
 
-	achievements?: TAchievementUnlock[];
+	authentication: {
+		oAuthProviderCode?: OAuthProviderCode;
+		oAuthName?: string;
+		oAuthImageURL?: string;
+		oAuthEmail?: string;
+		oauths?: TPlayerOAuth[];
+	}
 
-	tokenBalance: number;
-	rewardTransactions?: TRewardTransaction[];
+	referral: {
+		id?: string;
+		context?: any;
+		inviterPlayerID?: string;
+	}
 
-	usageStat?: any;
+	watchdog: {
+		markedAsSuspicious: boolean;
+		markedAsBot: boolean;
+		banned: boolean;
+		suspended: boolean;
+		suspensionTill: Date;
+	}
+
+	// Social network information
+	friends?: {
+		playerId: number;
+		timestamp: Date;
+	}[];
+	foes? :{
+		playerId: number;
+		timestamp: Date;
+	}[];
+
+	// Progression
+	points: number;
+	rank: number;
+
+	achievements?:{
+		id: number;
+		timestamp: Date;
+		minigameId?: number;
+	}[];
+
 }

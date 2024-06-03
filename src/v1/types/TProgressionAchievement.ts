@@ -1,11 +1,13 @@
 import { TLocalizedString } from "../../lib/TLocalizedString";
 
-export type TAchievement = {
+export type TProgressionAchievement = {
 	id: number;
-	code: string;
 
-	isProjectAchievement: boolean;
+	minigameId?: number;
 
 	name: TLocalizedString;
 	description: TLocalizedString;
+	details?: any;
+
+	iconUrl: string;
 }

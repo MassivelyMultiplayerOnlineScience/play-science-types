@@ -3,10 +3,9 @@ export type TPlayerThrottling = {
     id: number;
 
     playerId: number;
-    projectId: number;
+    minigameId: number;
 
-    footprint1sec: string;
-    count1sec: number;
+    timestamp: Date;
 
     footprint1min: string;
     count1min: number;

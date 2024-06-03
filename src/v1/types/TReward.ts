@@ -4,22 +4,25 @@ export type TReward = {
 	id: number;
 	code: string;
 
-	providerId: number;
+	provider: string;
 
-	projectId?: string;
-	gameId?: string;
+	minigameId?: string;
+	game?: string;
 
 	category: TLocalizedString;
-	url: TLocalizedString;
-	imageURL: TLocalizedString;
-	title: TLocalizedString;
+
+	name: TLocalizedString;
 	description: TLocalizedString;
+	url: TLocalizedString;
+	imageUrl: string[];
 
 	price: number;
 
-	isListed: boolean;
-	isAvailable: boolean;
-	availabilityInfo?: TLocalizedString;
-	availabilityDateFrom?: Date;
-	availabilityDateTill?: Date;
+	availability: {
+		isListed: boolean;
+		isAvailable: boolean;
+		availabilityInfo?: TLocalizedString;
+		availabilityDateFrom?: Date;
+		availabilityDateTill?: Date;
+	}
 }
