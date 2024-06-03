@@ -1,8 +1,8 @@
 import { TLocalizedString } from "../../lib/TLocalizedString";
-export declare type TRewardProvider = {
+export type TRewardProvider = {
     id: number;
-    code: string;
-    name: TLocalizedString;
-    transactionManagerDetails?: any;
+    videogameId?: number;
+    name?: TLocalizedString;
+    transactionSettings?: any;
 };
 //# sourceMappingURL=TRewardProvider.d.ts.map

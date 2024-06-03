@@ -1,7 +1,7 @@
-export declare type TClassificationsCreateRequest = {
+export type TClassificationsCreateRequest = {
     dummy: string;
 };
-export declare type TClassificationsCreateResponse = {
+export type TClassificationsCreateResponse = {
     uid: string;
     player: {
         score: number;

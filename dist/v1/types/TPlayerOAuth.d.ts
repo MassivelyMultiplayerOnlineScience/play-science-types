@@ -7,7 +7,7 @@ export declare enum OAuthProviderCode {
     CCP_EVE = "ccp-eve",
     GEARBOX_SHIFT = "gearbox-shift"
 }
-export declare type TPlayerOAuth = {
+export type TPlayerOAuth = {
     id: number;
     playerID: number;
     subjectCode: string;

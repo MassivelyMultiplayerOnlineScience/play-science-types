@@ -1,9 +1,8 @@
-export declare type TPlayerThrottling = {
+export type TPlayerThrottling = {
     id: number;
     playerId: number;
-    projectId: number;
-    footprint1sec: string;
-    count1sec: number;
+    minigameId: number;
+    timestamp: Date;
     footprint1min: string;
     count1min: number;
     footprint1hour: string;
