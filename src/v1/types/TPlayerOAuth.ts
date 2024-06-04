@@ -1,5 +1,5 @@
 export enum OAuthProviderCode {
-    APPLE = "apple",
+	APPLE = "apple",
 	FACEBOOK = "facebook",
 	GOOGLE = "google",
 	MICROSOFT = "microsoft",
@@ -7,17 +7,16 @@ export enum OAuthProviderCode {
 	DISCORD = "discord",
 
 	CCP_EVE = "ccp-eve",
-	GEARBOX_SHIFT = "gearbox-shift"
+	GEARBOX_SHIFT = "gearbox-shift",
 }
 
-
 export type TPlayerOAuth = {
-    id: number;
+	id: number;
 
 	playerID: number;
 
-    subjectCode: string; // Stable unique code for user given by the provider
-    providerCode: OAuthProviderCode; // Unique provider code
+	subjectCode: string; // Stable unique code for user given by the provider
+	providerCode: OAuthProviderCode; // Unique provider code
 
-    profileData: any;
-}
+	profileData: any;
+};

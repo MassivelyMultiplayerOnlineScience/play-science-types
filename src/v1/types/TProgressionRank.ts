@@ -5,6 +5,6 @@ export type TProgressionRank = {
 
 	minigameId: number;
 	name: TLocalizedString;
-    pointsRequired: number;
+	pointsRequired: number;
 	iconUrl: string;
-}
+};

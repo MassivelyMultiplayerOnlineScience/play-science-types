@@ -1,17 +1,17 @@
 // Example:
 // {
-// 	"en": "Login",
-// 	"fr": "Connexion"
+// 	'en': 'Login',
+// 	'fr': 'Connexion'
 // }
 function translate(translations, locale, defaultLocale) {
-    if (defaultLocale === void 0) { defaultLocale = "en"; }
+    if (defaultLocale === void 0) { defaultLocale = 'en'; }
     var translation = translations[locale];
     if (!translation)
         translation = translations[defaultLocale];
     if (!translation)
-        translation = translations[""];
+        translation = translations[''];
     if (!translation)
-        translation = "NA";
+        translation = 'NA';
     return translation;
 }
 export { translate };

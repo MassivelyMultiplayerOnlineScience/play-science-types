@@ -1,5 +1,3 @@
-'use strict';
-
 export * from './types/IClassification';
 export * from './types/ITask';
 

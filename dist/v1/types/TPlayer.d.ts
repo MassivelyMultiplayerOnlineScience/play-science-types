@@ -1,5 +1,5 @@
-import { TPlayerTransaction } from "./TPlayerTransaction";
-import { OAuthProviderCode, TPlayerOAuth } from "./TPlayerOAuth";
+import { TPlayerTransaction } from './TPlayerTransaction';
+import { OAuthProviderCode, TPlayerOAuth } from './TPlayerOAuth';
 export type TPlayer = {
     id: number;
     code: string;

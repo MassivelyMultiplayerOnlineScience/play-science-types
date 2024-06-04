@@ -1,4 +1,3 @@
-'use strict';
 export * from './types/IClassification';
 export * from './types/ITask';
 export * from './types/TActivity';

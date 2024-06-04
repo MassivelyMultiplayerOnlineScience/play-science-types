@@ -1,13 +1,13 @@
-import { TLocalizedString } from "src/lib/TLocalizedString";
+import { TLocalizedString } from "../../lib/TLocalizedString";
 import { TOrganization } from "./TOrganization";
 
 export type TResearcher = {
-    id: number;
-    name: string;
+	id: number;
+	name: string;
 
-    position: TLocalizedString;
-    affiliaition: TOrganization;
+	position: TLocalizedString;
+	affiliaition: TOrganization;
 
-    url?: TLocalizedString;
-    imageUrl?: string;
-}
+	url?: TLocalizedString;
+	imageUrl?: string;
+};

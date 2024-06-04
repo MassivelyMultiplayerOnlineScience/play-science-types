@@ -1,4 +1,4 @@
-import { TLocalizedString } from "src/lib/TLocalizedString";
+import { TLocalizedString } from '../../lib/TLocalizedString';
 
 export type TOrganization = {
     id: number;

@@ -1,7 +1,7 @@
-import { TLocalizedString } from "../../lib/TLocalizedString";
-import { TProgressionRank } from "./TProgressionRank";
-import { TResearcher } from "./TResearcher";
-import { TOrganization } from "./TOrganization";
+import { TLocalizedString } from '../../lib/TLocalizedString';
+import { TProgressionRank } from './TProgressionRank';
+import { TResearcher } from './TResearcher';
+import { TOrganization } from './TOrganization';
 export type TMinigame = {
     id: number;
     code: string;

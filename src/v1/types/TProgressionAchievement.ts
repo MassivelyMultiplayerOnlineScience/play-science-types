@@ -1,4 +1,4 @@
-import { TLocalizedString } from "../../lib/TLocalizedString";
+import { TLocalizedString } from '../../lib/TLocalizedString';
 
 export type TProgressionAchievement = {
 	id: number;

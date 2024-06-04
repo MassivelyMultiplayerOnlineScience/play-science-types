@@ -1,6 +1,6 @@
 
-import { TPlayerTransaction } from "./TPlayerTransaction";
-import { OAuthProviderCode, TPlayerOAuth } from "./TPlayerOAuth";
+import { TPlayerTransaction } from './TPlayerTransaction';
+import { OAuthProviderCode, TPlayerOAuth } from './TPlayerOAuth';
 
 export type TPlayer = {
 	id: number; // Unique player ID on the Play Science platform

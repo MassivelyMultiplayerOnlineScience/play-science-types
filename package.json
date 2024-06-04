@@ -1,6 +1,6 @@
 {
   "name": "@mmos/play-science-types",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "license": "MIT",
   "description": "Play Science API domain model and request interface definitions, © 2022-24 MMOS Sàrl",
