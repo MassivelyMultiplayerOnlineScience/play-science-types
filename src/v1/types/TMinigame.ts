@@ -63,7 +63,7 @@ export type TMinigame = {
 	throttling: {
 		classificationsMinSeconds: number;
 		classificationsMaxPerHour: number;
-		classificationsMaxPerMDay: number;
+		classificationsMaxPerDay: number;
 	};
 
 	stats: {
