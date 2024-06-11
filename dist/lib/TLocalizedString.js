@@ -5,6 +5,8 @@
 // }
 function translate(translations, locale, defaultLocale) {
     if (defaultLocale === void 0) { defaultLocale = 'en'; }
+    if (typeof translations === 'string')
+        return translations;
     var translation = translations[locale];
     if (!translation)
         translation = translations[defaultLocale];

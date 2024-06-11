@@ -1,4 +1,4 @@
-export type TLocalizedString = Record<string, string>;
+export type TLocalizedString = Record<string, string> | string;
 // Example:
 // {
 // 	'en': 'Login',
@@ -6,6 +6,8 @@ export type TLocalizedString = Record<string, string>;
 // }
 
 function translate(translations: TLocalizedString, locale: string, defaultLocale = 'en') : string {
+	if (typeof translations === 'string') return translations;
+
 	let translation = translations[locale];
 
 	if (!translation) translation = translations[defaultLocale];
