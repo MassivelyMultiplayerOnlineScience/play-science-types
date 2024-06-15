@@ -72,7 +72,7 @@ export type TMinigame = {
 		classificationCountLastMonth: number;
 		playerCount: number;
 		playerCountLastWeek: number;
-		playerCountLasMonth: number;
+		playerCountLastMonth: number;
 		newPlayerCountLastWeek: number;
 		newPlayerCountLastMonth: number;
 	};

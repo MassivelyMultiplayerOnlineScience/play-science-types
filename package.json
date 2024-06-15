@@ -1,6 +1,6 @@
 {
   "name": "@mmos/play-science-types",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "license": "MIT",
   "description": "Play Science API domain model and request interface definitions, © 2022-24 MMOS Sàrl",
@@ -17,10 +17,10 @@
   "devDependencies": {
     "esdoc": "^1.1.0",
     "esdoc-standard-plugin": "~1.0.0",
-    "eslint": "^9.4.0",
+    "eslint": "^9.5.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-n": "^17.8.1",
+    "eslint-plugin-n": "^17.9.0",
     "eslint-plugin-promise": "^6.2.0",
     "eslint-plugin-standard": "^5.0.0",
     "typescript": "^5.4.5",

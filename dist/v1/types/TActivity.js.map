@@ -1,1 +1,1 @@
-{"version":3,"file":"TActivity.js","sourceRoot":"","sources":["../../../src/v1/types/TActivity.ts"],"names":[],"mappings":""}
+{"version":3,"file":"TActivity.js","sourceRoot":"","sources":["../../../src/v1/types/TActivity.ts"],"names":[],"mappings":"AAAA,MAAM,CAAN,IAAY,YAkBX;AAlBD,WAAY,YAAY;IACvB,6BAAa,CAAA;IACb,+BAAe,CAAA;IAEf,mEAAmD,CAAA;IACnD,6DAA6C,CAAA;IAE7C,2DAA2C,CAAA;IAC3C,+DAA+C,CAAA;IAC/C,iEAAiD,CAAA;IACjD,iEAAiD,CAAA;IACjD,iDAAiC,CAAA;IAEjC,qEAAqD,CAAA;IACrD,qDAAqC,CAAA;IAErC,iDAAiC,CAAA;IACjC,mDAAmC,CAAA;AACpC,CAAC,EAlBW,YAAY,KAAZ,YAAY,QAkBvB"}
